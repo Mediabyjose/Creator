@@ -1,0 +1,17 @@
+name: Run Actionforge Graph (manual)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Actionforge graph (manual)
+        uses: actionforge/action@v0.9.54
+        with:
+          graph_file: ".github/workflows/graphs/example.yml"
+          token: "${{ secrets.GITHUB_TOKEN }}"
