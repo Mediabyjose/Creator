@@ -1,7 +1,12 @@
-name: Run Actionforge Graph (manual)
+name: Run Actionforge Graph
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/graphs/**'
 
 jobs:
   run-graph:
@@ -10,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run Actionforge graph (manual)
+      - name: Run Actionforge graph
         uses: actionforge/action@v0.9.54
         with:
           graph_file: ".github/workflows/graphs/example.yml"

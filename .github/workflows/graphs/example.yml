@@ -1,11 +1,14 @@
-# Placeholder Actionforge graph file
-# Replace this file with a valid Actionforge graph produced by the Actionforge editor.
-# See https://www.actionforge.dev/docs for guidance on creating graphs.
+# Example Actionforge graph (minimal example)
+# Replace this with a real graph exported from the Actionforge editor.
+# This example is intentionally simple so you can test the integration.
 
-# Example (placeholder):
-# This is not a valid Actionforge graph — it's here as a placeholder so the repository
-# has the correct layout. Replace with a graph exported from Actionforge's editor.
-
-# graph:
-#   nodes: []
-#   edges: []
+graph:
+  metadata:
+    name: example-hello
+  nodes:
+    - id: node1
+      type: run
+      name: say-hello
+      # `run` should contain the shell or command to execute
+      run: echo "Hello from Actionforge graph"
+  edges: []
