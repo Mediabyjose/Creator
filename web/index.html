@@ -27,6 +27,12 @@
         <div id="layout" class="layout">
           <!-- Drop components here -->
         </div>
+
+        <div class="canvas-controls" style="margin-top:12px">
+          <button id="exportYml" class="vscode-button">Export Graph (Download YAML)</button>
+          <button id="downloadJson" class="vscode-button">Export JSON (download)</button>
+          <small style="display:block;margin-top:8px;color:#666">Use the exported YAML and run <code>scripts/commit-graph.sh</code> to create a branch & push an import PR automatically.</small>
+        </div>
       </section>
     </main>
 
