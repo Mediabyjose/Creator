@@ -1,0 +1,13 @@
+{
+  "name": "creator-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server web -p 8080",
+    "build": "echo 'no build step'",
+    "setup-actionforge": "bash scripts/setup-actionforge.sh"
+  },
+  "dependencies": {
+    "sortablejs": "^1.15.0"
+  }
+}
